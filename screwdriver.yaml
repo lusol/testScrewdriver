@@ -5,4 +5,4 @@ jobs:
   main:
     requires: [~pr, ~commit]
     steps:
-      - hello: echo "hellow"
+      - hello: echo "hellllllow"
