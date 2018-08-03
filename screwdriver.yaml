@@ -5,7 +5,10 @@ jobs:
   main:
     requires: [~pr, ~commit]
     steps:
-      - hello: echo "hello world"
+      - hello: for run in {1..50}
+                do
+                  echo "hello world"
+                done
       - exit: exit 1
       - do_not_run: echo "will not run"
       - teardown-lusol: echo bye
