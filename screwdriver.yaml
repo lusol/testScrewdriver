@@ -5,7 +5,22 @@ jobs:
   main:
     requires: [~pr, ~commit]
     steps:
-      - ayyyy:  echo -e "Hai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\n"
+      - ayyyy:  echo -e "Hai\n
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      Hello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\nHai\nHello\nTesting\n"
       - exit: exit 1
       - do_not_run: printf "will not run"
       - teardown-lusol: printf bye
