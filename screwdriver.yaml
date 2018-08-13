@@ -5,7 +5,11 @@ jobs:
   main:
     requires: [~pr, ~commit]
     steps:
-      - ayyyy:  printf "hello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\nhello\nworld\n"
+      - ayyyy: |
+        for i in {1..1000}
+          do
+             echo "Welcome $i times"
+          done
       - exit: exit 1
       - do_not_run: printf "will not run"
       - teardown-lusol: printf bye
