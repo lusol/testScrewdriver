@@ -24,7 +24,12 @@ jobs:
             #- get: meta get build_version_1
             #- sleep: sleep 60000
             - postecho: |
+                echo {0..9}{0..9} | tr ' ' '\n'
+                sleep 10
                 cat $SD_SOURCE_DIR/ascii-art.txt
+                sleep 10
+                echo {a..z}{a..z} | tr ' ' '\n'
+                
             #- publish: npx semantic-release
             #- install: npm install screwdriver-template-main
             #- tag: ./node_modules/.bin/template-tag --name tifftemplate --version 1.0.4 --tag meow
