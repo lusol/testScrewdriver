@@ -1,11 +1,27 @@
 shared:
+    image: node:8
     environment:
         USER_SHELL_BIN: bash
 
+cache:
+    event:
+        - /sd/meta
+    pipeline:
+        - /sd/meta
+    job:
+        set-meta-job: [/sd/meta]
+
 jobs:
+    set-meta-job:
+        steps:
+            - set: |
+                meta set foo[2].bar[1] baz
+    get-meta-job:
+        steps:
+            - get: |
+                echo $(meta get foo)
     main:
         requires: [~pr, ~commit]
-        image: node:8
         steps:
             #- set: meta set build_version_1 1234567
             #- get: meta get build_version_1
